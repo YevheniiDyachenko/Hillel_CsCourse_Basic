@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2 Time in a second", "Tim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.1 MyName", "1.1 MyName\1.1 MyName.csproj", "{B4ECD64B-D96A-458B-B3E0-8212320E99C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F4DF390-EFCC-4200-9ED8-DAB03A50C00F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HomeWork - 3", "HomeWork - 3", "{1531DAA8-23CE-4E51-9FB6-845CB60952CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
