@@ -18,10 +18,11 @@
             }
 
             //calculation of the result
-            decimal totalPrice = price * (100 - discount) / 100;
-
+            decimal totalDiscount = price * discount / 100;
+            decimal totalPrice = price - totalDiscount;
+            
             //output of the result
-            Console.WriteLine($" Item price: {price} UAH \n Discunt: {discount} % \n Total price: {totalPrice} UAH !!!");
+            Console.WriteLine($" Item price: {price} UAH \n Discunt: {discount} % \n Total discount: {totalDiscount} UAH \n Total price: {totalPrice} UAH !!!");
             Console.ReadLine();
         }
     }
