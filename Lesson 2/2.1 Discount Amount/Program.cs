@@ -4,19 +4,23 @@
     {
         static void Main(string[] args)
         {
+            //creating and initializing variables
             decimal price = 100;
             byte discount = 49;
-            
-            Console.WriteLine("Enter the item price (press Enter to use default price):");
-            string input = Console.ReadLine();
 
-            if (input != "") // when user click Enter , then use base value for price 
+            //getting values from the console
+            Console.WriteLine("Enter the item price (press Enter to use default price):");
+            string inputPrice = Console.ReadLine();
+
+            if (inputPrice != "") // when user click Enter , then use base value for price 
             {
-                price = Convert.ToDecimal(input);
+                price = Convert.ToDecimal(inputPrice);
             }
 
-            decimal totalPrice = price * discount / 100;
+            //calculation of the result
+            decimal totalPrice = price * (100 - discount) / 100;
 
+            //output of the result
             Console.WriteLine($" Item price: {price} UAH \n Discunt: {discount} % \n Total price: {totalPrice} UAH !!!");
             Console.ReadLine();
         }

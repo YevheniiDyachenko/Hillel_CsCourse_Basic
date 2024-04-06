@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.1 MyName", "Lesson 1\1.1 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.1 Discount Amount", "Lesson 2\2.1 Discount Amount\2.1 Discount Amount.csproj", "{40F21864-275E-43C9-92FB-3C44AD09B2DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3 Book Information", "Lesson 2\2.3 Book Information\2.3 Book Information.csproj", "{7C423042-A2F5-417D-8660-DE27084EB81A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{40F21864-275E-43C9-92FB-3C44AD09B2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F21864-275E-43C9-92FB-3C44AD09B2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F21864-275E-43C9-92FB-3C44AD09B2DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C423042-A2F5-417D-8660-DE27084EB81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C423042-A2F5-417D-8660-DE27084EB81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C423042-A2F5-417D-8660-DE27084EB81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C423042-A2F5-417D-8660-DE27084EB81A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{8C6FBED5-DF17-4A1E-A63A-03F968DABEC1} = {81546C6F-F3A0-4292-A57A-65784F632A7B}
 		{0F952436-217B-4CDD-A088-B198A932E855} = {1AC21175-4630-4B0A-A816-6F103D399EB7}
 		{40F21864-275E-43C9-92FB-3C44AD09B2DA} = {81546C6F-F3A0-4292-A57A-65784F632A7B}
+		{7C423042-A2F5-417D-8660-DE27084EB81A} = {81546C6F-F3A0-4292-A57A-65784F632A7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6223E348-04DD-457C-B2D3-70D008C408F0}
