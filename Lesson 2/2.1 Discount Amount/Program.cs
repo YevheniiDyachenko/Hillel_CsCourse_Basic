@@ -17,7 +17,7 @@
 
             decimal totalPrice = price * discount / 100;
 
-            Console.WriteLine($" Item price: {price} UAH \n Discunt: {discount}% \n Total price:{totalPrice} UAH !!!");
+            Console.WriteLine($" Item price: {price} UAH \n Discunt: {discount} % \n Total price: {totalPrice} UAH !!!");
             Console.ReadLine();
         }
     }
