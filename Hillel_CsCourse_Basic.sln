@@ -21,6 +21,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.3 Book Information", "Les
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.1 From right to left digits", "Lesson 3\3.1 From right to left digits\3.1 From right to left digits.csproj", "{12F8AAEE-1E74-49BA-94B0-3C03A3737280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.2 Calculates the square of any given number", "Lesson 3\3.2 Calculates the square of any given number\3.2 Calculates the square of any given number.csproj", "{03B79A86-FE40-4CC5-83E3-1DA884206558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.3  Number obtained by permuting the first and second digits", "Lesson 3\3.3  Number obtained by permuting the first and second digits\3.3  Number obtained by permuting the first and second digits.csproj", "{6796CE08-001D-43B1-8E0B-B480D748DE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.4 Arithmetic average of two numbers", "Lesson 3\3.4 Arithmetic average of two numbers\3.4 Arithmetic average of two numbers.csproj", "{C02126FD-534C-44AC-AD2E-387150102A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.5 Сircle area", "Lesson 3\3.5 Сircle area\3.5 Сircle area.csproj", "{E2444DC4-0CB8-4AEE-8A72-EE9553938404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.6 Ways to swap the values of two variables", "Lesson 3\3.6 Ways to swap the values of two variables\3.6 Ways to swap the values of two variables.csproj", "{CEF9DA71-C41A-4B4C-A104-25221155B44E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +57,26 @@ Global
 		{12F8AAEE-1E74-49BA-94B0-3C03A3737280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12F8AAEE-1E74-49BA-94B0-3C03A3737280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12F8AAEE-1E74-49BA-94B0-3C03A3737280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B79A86-FE40-4CC5-83E3-1DA884206558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B79A86-FE40-4CC5-83E3-1DA884206558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B79A86-FE40-4CC5-83E3-1DA884206558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B79A86-FE40-4CC5-83E3-1DA884206558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6796CE08-001D-43B1-8E0B-B480D748DE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6796CE08-001D-43B1-8E0B-B480D748DE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6796CE08-001D-43B1-8E0B-B480D748DE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6796CE08-001D-43B1-8E0B-B480D748DE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C02126FD-534C-44AC-AD2E-387150102A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02126FD-534C-44AC-AD2E-387150102A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02126FD-534C-44AC-AD2E-387150102A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02126FD-534C-44AC-AD2E-387150102A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2444DC4-0CB8-4AEE-8A72-EE9553938404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2444DC4-0CB8-4AEE-8A72-EE9553938404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2444DC4-0CB8-4AEE-8A72-EE9553938404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2444DC4-0CB8-4AEE-8A72-EE9553938404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF9DA71-C41A-4B4C-A104-25221155B44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF9DA71-C41A-4B4C-A104-25221155B44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF9DA71-C41A-4B4C-A104-25221155B44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF9DA71-C41A-4B4C-A104-25221155B44E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
