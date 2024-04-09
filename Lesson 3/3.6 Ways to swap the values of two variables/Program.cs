@@ -32,8 +32,6 @@
             Console.WriteLine($"The value of the variable \"A\" after swapping is: {a}");
             Console.WriteLine($"The value of the variable \"B\" after swapping is: {b}");
             
-            // 2 Variant
-            
             Console.ReadLine();
         }
     }
