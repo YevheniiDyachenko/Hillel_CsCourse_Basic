@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.6 Ways to swap the values
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.1 Comparing two numbers", "Lesson 4\4.1 Comparing two numbers\4.1 Comparing two numbers.csproj", "{18CC3604-2132-4074-AB99-2DFD56DE3622}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2 Month", "Lesson 4\4.2 Month\4.2 Month.csproj", "{A3C6908B-4F21-4A16-A400-C123750B2AE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{18CC3604-2132-4074-AB99-2DFD56DE3622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18CC3604-2132-4074-AB99-2DFD56DE3622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18CC3604-2132-4074-AB99-2DFD56DE3622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C6908B-4F21-4A16-A400-C123750B2AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C6908B-4F21-4A16-A400-C123750B2AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C6908B-4F21-4A16-A400-C123750B2AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C6908B-4F21-4A16-A400-C123750B2AE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
