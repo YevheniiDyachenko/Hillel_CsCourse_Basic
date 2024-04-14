@@ -11,7 +11,6 @@
 
             // Compare the month number to the different seasons.
             //Variant 1 Using If-Else Operator
-
             Console.Write("If-Else Operator Result:\t");
             if (month > 0 && month < 3 || month == 12)
             {
@@ -43,7 +42,6 @@
 
 
             //Variant 3 Using Switch Case Operator
-
             Console.Write("Switch Case Operator Result:\t");
             switch (month)
             {
