@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.2 Month", "Lesson 4\4.2 M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.3 Fizz-Buzz", "Lesson 4\4.3 Fizz-Buzz\4.3 Fizz-Buzz.csproj", "{770C7B5D-A75F-425F-8AA2-CBA4ABA4F62D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.4 Quadratic equation.", "Lesson 4\4.4 Quadratic equation\4.4 Quadratic equation..csproj", "{AF134C0D-6C0B-4E0D-B844-10FE0F104A82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{770C7B5D-A75F-425F-8AA2-CBA4ABA4F62D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{770C7B5D-A75F-425F-8AA2-CBA4ABA4F62D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{770C7B5D-A75F-425F-8AA2-CBA4ABA4F62D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF134C0D-6C0B-4E0D-B844-10FE0F104A82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF134C0D-6C0B-4E0D-B844-10FE0F104A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF134C0D-6C0B-4E0D-B844-10FE0F104A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF134C0D-6C0B-4E0D-B844-10FE0F104A82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
