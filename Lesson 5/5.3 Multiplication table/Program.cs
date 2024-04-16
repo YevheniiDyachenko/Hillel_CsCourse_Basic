@@ -7,7 +7,7 @@
             // Create a multiplication table from 1 to 5.
             MultiplicationTable(1, 5);
             
-            Console.WriteLine("\n");
+            Console.WriteLine();
 
             // Create a multiplication table from 6 to 10.
             MultiplicationTable(6, 10);
