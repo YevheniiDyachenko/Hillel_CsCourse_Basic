@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            // ? - null-able variable
             string? password;
             do
             {
