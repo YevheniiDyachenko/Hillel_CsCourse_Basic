@@ -4,14 +4,28 @@
     {
         static void Main(string[] args)
         {
-            // Write a programme where the user enters the month number. If the month is 1,2,12, it displays "Winter"; 3,4,5 - "Spring"; 6-8 - "Summer"; 9-11 - "Autumn". In any other case - "There is no such month on this planet".
             // Get the month number from the user.
             Console.WriteLine("Enter the month number:");
             int month = Convert.ToInt32(Console.ReadLine());
 
-            // Compare the month number to the different seasons.
-            //Variant 1 Using If-Else Operator
+            // Display the result.
             Console.Write("If-Else Operator Result:\t");
+            IfElseOperatorResult(month);
+
+            Console.Write("Ternary Operator Result:\t");
+            TernaryOperatorResult(month);
+
+            Console.Write("Switch Case Operator Result:\t");
+            SwitchCaseOperatorResult(month);
+            
+            Console.ReadLine();
+        }
+        
+        // Compare the month number to the different seasons.
+
+        //Variant 1 Using If-Else Operator
+        static void IfElseOperatorResult(int month)
+        {
             if (month > 0 && month < 3 || month == 12)
             {
                 Console.WriteLine("Winter");
@@ -32,17 +46,20 @@
             {
                 Console.WriteLine("There is no such month on this planet");
             }
+        }
 
-            //Variant 2 Using Ternary Operator
-            Console.Write("Ternary Operator Result:\t");
+        //Variant 2 Using Ternary Operator
+        static void TernaryOperatorResult(int month)
+        {
             Console.WriteLine(month >= 3 && month < 6 ? "Spring" :
                 month >= 6 && month < 9 ? "Summer" :
                 month >= 9 && month < 12 ? "Autumn" :
                 month == 1 || month == 2 || month == 12 ? "Winter" : "There is no such month on this planet");
+        }
 
-
-            //Variant 3 Using Switch Case Operator
-            Console.Write("Switch Case Operator Result:\t");
+        //Variant 3 Using Switch Case Operator
+        static void SwitchCaseOperatorResult(int month)
+        {
             switch (month)
             {
                 case 1:
