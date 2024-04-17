@@ -24,7 +24,7 @@
         // Compare the month number to the different seasons.
 
         //Variant 1 Using If-Else Operator
-        static void IfElseOperatorResult(int month)
+        private static void IfElseOperatorResult(int month)
         {
             if (month > 0 && month < 3 || month == 12)
             {
@@ -49,7 +49,7 @@
         }
 
         //Variant 2 Using Ternary Operator
-        static void TernaryOperatorResult(int month)
+        private static void TernaryOperatorResult(int month)
         {
             Console.WriteLine(month >= 3 && month < 6 ? "Spring" :
                 month >= 6 && month < 9 ? "Summer" :
@@ -58,7 +58,7 @@
         }
 
         //Variant 3 Using Switch Case Operator
-        static void SwitchCaseOperatorResult(int month)
+        private static void SwitchCaseOperatorResult(int month)
         {
             switch (month)
             {
