@@ -45,6 +45,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.2 Guess  the number", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.3 Multiplication table", "Lesson 5\5.3 Multiplication table\5.3 Multiplication table.csproj", "{4D217A37-33E9-4851-A0DE-B43CF53BB724}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array of 10 elements", "Array of 10 elements\Array of 10 elements.csproj", "{73431CA1-AA29-4BFE-80B0-A5D0789A2FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.1 Array of 10 elements", "Lesson 6\6.1 Array of 10 elements\6.1 Array of 10 elements.csproj", "{1154F9C8-746B-42A6-BAF4-E154A8D72692}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +123,14 @@ Global
 		{4D217A37-33E9-4851-A0DE-B43CF53BB724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D217A37-33E9-4851-A0DE-B43CF53BB724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D217A37-33E9-4851-A0DE-B43CF53BB724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73431CA1-AA29-4BFE-80B0-A5D0789A2FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73431CA1-AA29-4BFE-80B0-A5D0789A2FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73431CA1-AA29-4BFE-80B0-A5D0789A2FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73431CA1-AA29-4BFE-80B0-A5D0789A2FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1154F9C8-746B-42A6-BAF4-E154A8D72692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1154F9C8-746B-42A6-BAF4-E154A8D72692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1154F9C8-746B-42A6-BAF4-E154A8D72692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1154F9C8-746B-42A6-BAF4-E154A8D72692}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
