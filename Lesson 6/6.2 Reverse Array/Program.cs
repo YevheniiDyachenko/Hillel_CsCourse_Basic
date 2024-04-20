@@ -1,4 +1,4 @@
-﻿namespace _6._1_Array_of_10_elements
+﻿namespace _6._2_Reverse_Array
 {
     class Program
     {
@@ -15,8 +15,10 @@
             ResultArray(arr);
             Console.WriteLine();
 
-            //Display positive integers
-            Console.WriteLine("The number of positive numbers: {0}", CountPositiveNumbers(arr));
+            //1 variant Display Reversed array
+            ReverseArray(arr);
+            Console.WriteLine("The reversed array:");
+            ResultArray(arr);
             Console.WriteLine();
         }
 
@@ -30,27 +32,14 @@
             }
         }
 
-        // Count the number of positive integers in an array
-        private static int CountPositiveNumbers(int[] arr)
+        //Reverse the array
+        private static void ReverseArray(int[] arr)
         {
-            var count = 0;
-            
-            // Iterate over the array elements
-            // Increment the count if the element is positive
-            foreach (var i in arr)
-            {
-                if (i > 0)
-                {
-                    count++;
-                }
-            }
-            
-            // Return the count of positive integers
-            return count;
+            Array.Reverse(arr);
         }
-        
+
         // Display array elements
-        private static void  ResultArray(int[] arr)
+        private static void ResultArray(int[] arr)
         {
             foreach (var i in arr)
             {
