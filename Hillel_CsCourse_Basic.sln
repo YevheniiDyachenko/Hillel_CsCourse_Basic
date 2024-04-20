@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.1 Array of 10 elements", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.2 Reverse Array", "Lesson 6\6.2 Reverse Array\6.2 Reverse Array.csproj", "{6478B8BF-2DA7-4721-9F45-7FB73DA5A617}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.3 Insert Element At Beginning", "Lesson 6\6.3 Insert Element At Beginning\6.3 Insert Element At Beginning.csproj", "{DC5D7032-1815-4174-8799-9F48D16CD5B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +139,10 @@ Global
 		{6478B8BF-2DA7-4721-9F45-7FB73DA5A617}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6478B8BF-2DA7-4721-9F45-7FB73DA5A617}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6478B8BF-2DA7-4721-9F45-7FB73DA5A617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5D7032-1815-4174-8799-9F48D16CD5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5D7032-1815-4174-8799-9F48D16CD5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5D7032-1815-4174-8799-9F48D16CD5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5D7032-1815-4174-8799-9F48D16CD5B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,7 +17,7 @@
 
             //Display positive integers
             Console.WriteLine("The number of positive numbers: {0}", CountPositiveNumbers(arr));
-            Console.WriteLine();
+            Console.ReadLine();
         }
 
         //Generate random elements from -100 to 100
