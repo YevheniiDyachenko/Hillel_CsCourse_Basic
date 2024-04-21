@@ -27,10 +27,10 @@
             ResultArray(arr);
             Console.WriteLine();
             
-            //Display 3 variant Reversed array (using temp variable)
-            ReverseArrayTemp(arr);
-            ReverseArrayTemp(arr); //used twice to reverse array, because it was reversed before by ReverseArrayReverse method
-            Console.WriteLine("The reversed array (using temp variable):");
+            //Display 3 variant Reversed array (using a swap of values)
+            ReverseArraySwap(arr);
+            ReverseArraySwap(arr); //used twice to reverse array, because it was reversed before by ReverseArrayReverse method
+            Console.WriteLine("The reversed array (using a swap of values):");
             ResultArray(arr);
             Console.ReadLine();
         }
@@ -66,17 +66,16 @@
             Array.Reverse(arr);
         }
         
-        //Reverse the array (using temp variable)
-        private static void ReverseArrayTemp(int[] arr)
+        //Reverse the array (using a swap of values)
+        private static void ReverseArraySwap(int[] arr)
         {
             int min = 0;
             int max = arr.Length - 1;
-            int temporary;
             while (min < max)
             {
-                temporary = arr[min];
-                arr[min] = arr[max];
-                arr[max] = temporary;
+                arr[min] += arr[max];
+                arr[max] = arr[min] - arr[max]; 
+                arr[min] -= arr[max];
                 min++;
                 max--;
             }
