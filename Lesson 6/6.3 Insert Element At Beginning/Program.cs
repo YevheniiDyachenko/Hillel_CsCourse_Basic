@@ -15,10 +15,10 @@
             ResultArray(arr);
             Console.WriteLine();
 
-            // Display th array with new element
-            AddElementAtBeginning(arr);
+            // Display the array with new element
+            int[] newArray = AddElementAtBeginning(arr);
             Console.WriteLine("The array with new element:");
-            ResultArray(arr);
+            ResultArray(newArray);
             Console.ReadLine();
         }
 
@@ -31,25 +31,30 @@
                 arr[i] = random.Next(-100, 101);
             }
         }
-        
+
         // Adding an element to the beginning of an array
         static int[] AddElementAtBeginning(int[] arr)
         {
             // Creating a new array extended by one element
-            int[] newArray = new int[arr.Length + 2];
+            int[] newArray = new int[arr.Length + 1];
 
             // Copying elements of the original array to a new array, shifting by one element
-           // Array.Copy(arr, 0, newArray, 1, arr.Length);
-           GenerateRandomElements(newArray);
+            int index = 1;
+            foreach (int i in arr)
+            {
+                newArray[index] = i;
+                index++;
+            }
+
             // Adding a new item to the beginning of the array
             Random random = new Random();
             int element = random.Next(-100, 101);
             newArray[0] = element;
 
             // Assigning a reference to a new array
-            return arr = newArray;
+            return newArray;
         }
-        
+
 
         // Display array elements
         private static void ResultArray(int[] arr)
