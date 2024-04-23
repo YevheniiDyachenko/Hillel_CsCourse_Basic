@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.3 Insert Element At Begin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.4 PrintUntilElementIsFound", "Lesson 6\6.4 PrintUntilElementIsFound\6.4 PrintUntilElementIsFound.csproj", "{5E922AED-7164-4EBB-94CE-5CEF90598E3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.1 StudentGrades", "7.1 StudentGrades\7.1 StudentGrades.csproj", "{AF9311B4-F620-4D05-8CA9-CE917032F805}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{5E922AED-7164-4EBB-94CE-5CEF90598E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E922AED-7164-4EBB-94CE-5CEF90598E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E922AED-7164-4EBB-94CE-5CEF90598E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9311B4-F620-4D05-8CA9-CE917032F805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9311B4-F620-4D05-8CA9-CE917032F805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9311B4-F620-4D05-8CA9-CE917032F805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9311B4-F620-4D05-8CA9-CE917032F805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
