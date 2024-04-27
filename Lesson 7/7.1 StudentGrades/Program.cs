@@ -13,10 +13,12 @@ namespace _7._1_StudentGrades
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            InitializeData(); // Ініціалізуємо початкові дані
-
-            Console.Write("Введіть ім'я студента: ");
+            // Getting the student's name
+            Console.Write("Enter the student's name: ");
             name = Console.ReadLine();
+
+            // Initialize the starting marks
+            InitializeData();
 
             bool exit = false;
             while (!exit)
@@ -128,7 +130,7 @@ namespace _7._1_StudentGrades
             PrintMarks("history", marksHistory);
             PrintMarks("language", marksLanguage);
         }
-        
+
         // Printing marks of a specific subject to the console
         private static void PrintMarks(string subject, int[] marks)
         {
@@ -137,6 +139,7 @@ namespace _7._1_StudentGrades
             {
                 Console.Write(mark + " ");
             }
+
             Console.WriteLine();
         }
     }
