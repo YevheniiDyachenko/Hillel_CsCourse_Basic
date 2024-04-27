@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 
 namespace _7._1_StudentGrades
 {
@@ -19,38 +20,34 @@ namespace _7._1_StudentGrades
 
             // Initialize the starting marks
             InitializeData();
-
-            bool exit = false;
-            while (!exit)
+            
+            // Main menu
+            while (true)
             {
-                Console.WriteLine("1. Add grade");
-                Console.WriteLine("2. Calculate the average grade");
-                Console.WriteLine("3. Show all grades");
-                Console.WriteLine("4. Exit");
-                Console.Write("Select an option: ");
-
-                string choice = Console.ReadLine();
-
-                switch (choice)
+                int input = MultipleChoice(true, new ShopMenu());
+                switch ((ShopMenu)input)
                 {
-                    case "1":
+                    case ShopMenu.AddMarks:
+                        Console.WriteLine($"\nYour choice: {ShopMenu.AddMarks}");
                         AddMarks();
                         break;
-                    case "2":
+                    case ShopMenu.AverageMarks:
+                        Console.WriteLine($"\nYour choice: {ShopMenu.AverageMarks}");
                         CalculateAverageMark();
                         break;
-                    case "3":
+                    case ShopMenu.ShowMarks:
+                        Console.WriteLine($"\nYour choice: {ShopMenu.ShowMarks}");
                         PrintAllMarks();
                         break;
-                    case "4":
-                        exit = true;
+                    case ShopMenu.Exit:
+                        Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Невірний вибір. Будь ласка, спробуйте ще раз.");
+                        Console.WriteLine("Wrong choice. Please try again");
                         break;
                 }
-
-                Console.WriteLine();
+                Console.ReadLine();
+                Console.Clear();
             }
         }
 
@@ -65,10 +62,10 @@ namespace _7._1_StudentGrades
         //Adding new marks to the arrays
         private static void AddMarks()
         {
-            Console.Write("Choose a subject (1-math, 2-history,3-language): ");
+            Console.WriteLine("\n Enter the subject number  \n 1 - Math \n 2 - History \n 3 - Language ");
             int subject = int.Parse(Console.ReadLine());
 
-            Console.Write("Enter the mark:");
+            Console.Write("\n Enter the mark:");
             int mark = int.Parse(Console.ReadLine());
 
 
@@ -90,8 +87,12 @@ namespace _7._1_StudentGrades
                     Console.WriteLine("Unknown subject.");
                     break;
             }
-
-            Console.WriteLine($"Mark for student {name} for subject {subject} added successfully.");
+            
+            Console.Write("Mark for student  ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{name}");
+            Console.ResetColor();
+            Console.WriteLine($", for subject {subject} added successfully.");
         }
 
         //Calculating the average mark
@@ -104,6 +105,7 @@ namespace _7._1_StudentGrades
             Console.WriteLine($"Average mark in math: {avgMath}");
             Console.WriteLine($"Average mark in history: {avgHistory}");
             Console.WriteLine($"Average mark in the language: {avgLanguage}");
+            
             double totalAvg = (avgMath + avgHistory + avgLanguage) / 3;
             Console.WriteLine($"Average marks in all subjects: {totalAvg}");
         }
@@ -141,6 +143,83 @@ namespace _7._1_StudentGrades
             }
 
             Console.WriteLine();
+        }
+
+        // Multiple choice menu
+        public static int MultipleChoice(bool canCancel, Enum userEnum, int spacingPerLine = 18, int optionsPerLine = 2,
+            int startX = 1, int startY = 1)
+        {
+            int currentSelection = 0;
+            ConsoleKey key;
+            Console.CursorVisible = false;
+            int length = Enum.GetValues(userEnum.GetType()).Length;
+            do
+            {
+                Console.Clear();
+                
+                Console.Write("For student ");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.Write($"{name}");
+                Console.ResetColor();
+                Console.WriteLine(", select an option from the following Menu:");
+                
+                for (int i = 0; i < length; i++)
+                {
+                    Console.SetCursorPosition(startX + (i % optionsPerLine) * spacingPerLine, startY + i / optionsPerLine);
+
+                    if (i == currentSelection)
+                        Console.ForegroundColor = ConsoleColor.Red;
+
+                    Console.Write(Enum.Parse(userEnum.GetType(), i.ToString()));
+
+                    Console.ResetColor();
+                }
+
+                key = Console.ReadKey(true).Key;
+
+                switch (key)
+                {
+                    case ConsoleKey.LeftArrow:
+                        {
+                            if (currentSelection % optionsPerLine > 0)
+                                currentSelection--;
+                            break;
+                        }
+                    case ConsoleKey.RightArrow:
+                        {
+                            if (currentSelection % optionsPerLine < optionsPerLine - 1)
+                                currentSelection++;
+                            break;
+                        }
+                    case ConsoleKey.UpArrow:
+                        {
+                            if (currentSelection >= optionsPerLine)
+                                currentSelection -= optionsPerLine;
+                            break;
+                        }
+                    case ConsoleKey.DownArrow:
+                        {
+                            if (currentSelection + optionsPerLine < length)
+                                currentSelection += optionsPerLine;
+                            break;
+                        }
+                    case ConsoleKey.Escape:
+                        {
+                            if (canCancel)
+                                return -1;
+                            break;
+                        }
+                }
+            } while (key != ConsoleKey.Enter);
+
+            Console.CursorVisible = true;
+
+            return currentSelection;
+        }
+
+        enum ShopMenu
+        {
+            AddMarks, AverageMarks, ShowMarks, Exit
         }
     }
 }
