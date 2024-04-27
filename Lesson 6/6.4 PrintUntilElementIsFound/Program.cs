@@ -4,10 +4,10 @@
     {
         private static void Main(string[] args)
         {
-            //Create an array of 10 elements
+            //Create an array of 100 elements
             var arr = new int[100];
 
-            //Generate random elements from -100 to 100
+            //Generate random elements from -5 to 5
             GenerateRandomElements(arr);
             
             //Display array elements
