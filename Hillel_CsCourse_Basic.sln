@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.4 PrintUntilElementIsFoun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.1 StudentGrades", "Lesson 7\7.1 StudentGrades\7.1 StudentGrades.csproj", "{0B0094DD-5FCD-4FBA-8AA9-E7D7835CABDE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.1 ShoppingCartApp", "Lesson 8\8.1 ShoppingCartApp\8.1 ShoppingCartApp.csproj", "{04E70029-0D02-4EB1-A280-0AE05E0998B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{0B0094DD-5FCD-4FBA-8AA9-E7D7835CABDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B0094DD-5FCD-4FBA-8AA9-E7D7835CABDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B0094DD-5FCD-4FBA-8AA9-E7D7835CABDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E70029-0D02-4EB1-A280-0AE05E0998B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E70029-0D02-4EB1-A280-0AE05E0998B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E70029-0D02-4EB1-A280-0AE05E0998B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E70029-0D02-4EB1-A280-0AE05E0998B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
