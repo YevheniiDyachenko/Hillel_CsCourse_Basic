@@ -41,12 +41,11 @@ namespace _9._1_Book
             book5.yearOfPublication = 1951;
             book5.numberOfPages = 224;
             
+            // Print the books
+            Book[] books = { book1, book2, book3, book4, book5 };
             Console.WriteLine("------------");
             Console.WriteLine("Our Books:");
             Console.WriteLine();
-            
-            // Print the books
-            Book[] books = { book1, book2, book3, book4, book5 };
             DisplayAllBooksInfo(books);
         }
 

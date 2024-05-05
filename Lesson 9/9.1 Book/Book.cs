@@ -17,7 +17,7 @@ class Book
         numberOfPages = 0;
     }
     
-    // 1. DisplayInfo Methods 
+    // 1. DisplayInfo Method 
     public void DisplayInfo()
     {
         Console.WriteLine($"Title: {title}");
@@ -26,7 +26,7 @@ class Book
         Console.WriteLine($"Number of pages: {numberOfPages}");
     }
 
-   // 2. IsThick Methods 
+   // 2. IsThick Method
     public void IsThick()
     {
         if (numberOfPages > 500)
