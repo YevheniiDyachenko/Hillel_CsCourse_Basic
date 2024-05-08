@@ -3,39 +3,39 @@
 class Book
 {
     // Properties
-    public string title;
-    public string author;
-    public int yearOfPublication;
-    public int numberOfPages;
-    
+    private string title;
+    private string author;
+    private int yearOfPublication;
+    private int numberOfPages;
+
     // Default constructor
-    public Book()
+    public Book(string title, string author, int yearOfPublication, int numberOfPages)
     {
-        title = "";
-        author = "";
-        yearOfPublication = 0;
-        numberOfPages = 0;
-    }
-    
-    // 1. DisplayInfo Method 
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Title: {title}");
-        Console.WriteLine($"Author: {author}");
-        Console.WriteLine($"Year of publication: {yearOfPublication}");
-        Console.WriteLine($"Number of pages: {numberOfPages}");
+        this.title = title;
+        this.author = author;
+        this.yearOfPublication = yearOfPublication;
+        this.numberOfPages = numberOfPages;
     }
 
-   // 2. IsThick Method
-    public void IsThick()
+    // 1. GetBookInfo  Method 
+    public string GetBookInfo()
+    {
+        return $"Title: {title}\n" +
+               $"Author: {author}\n" +
+               $"Year of publication: {yearOfPublication}\n" +
+               $"Number of pages: {numberOfPages}";
+    }
+
+    // 2. IsThick Method
+    public string IsThick()
     {
         if (numberOfPages > 500)
         {
-            Console.WriteLine("This book is thick!");
+            return "This book is thick!";
         }
         else
         {
-            Console.WriteLine("This book is not so thick.");
+            return "This book is not so thick.";
         }
     }
 }
