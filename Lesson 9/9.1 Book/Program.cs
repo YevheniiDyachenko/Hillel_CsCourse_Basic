@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace _9._1_Book
 {
     class Program
