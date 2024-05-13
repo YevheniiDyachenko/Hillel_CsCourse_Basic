@@ -1,8 +1,7 @@
-﻿using _10._1_Person;
-
+﻿namespace _10._1_Person;
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
         //Using UTF-8
         Console.OutputEncoding = System.Text.Encoding.UTF8;
