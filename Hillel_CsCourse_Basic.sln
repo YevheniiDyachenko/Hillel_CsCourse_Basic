@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.1 BankAccount", "Lesson 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.1 PluginManager", "Lesson 14\14.1 PluginManager\14.1 PluginManager.csproj", "{D30C331D-E988-453F-9654-EC317C8CAE13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.2 Event logging", "Lesson 14\14.2 Event logging\14.2 Event logging.csproj", "{67AD0BC7-EE26-4B36-B87C-7B4D180FCFEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +217,10 @@ Global
 		{D30C331D-E988-453F-9654-EC317C8CAE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30C331D-E988-453F-9654-EC317C8CAE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30C331D-E988-453F-9654-EC317C8CAE13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AD0BC7-EE26-4B36-B87C-7B4D180FCFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AD0BC7-EE26-4B36-B87C-7B4D180FCFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AD0BC7-EE26-4B36-B87C-7B4D180FCFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AD0BC7-EE26-4B36-B87C-7B4D180FCFEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
