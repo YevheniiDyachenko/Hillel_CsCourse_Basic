@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.1 Transport", "Lesson 12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.1 BankAccount", "Lesson 13\13.1 BankAccount\13.1 BankAccount.csproj", "{5A065E9F-258B-4A02-8F3A-4FE8539188E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.1 PluginManager", "Lesson 14\14.1 PluginManager\14.1 PluginManager.csproj", "{D30C331D-E988-453F-9654-EC317C8CAE13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -209,6 +211,10 @@ Global
 		{5A065E9F-258B-4A02-8F3A-4FE8539188E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A065E9F-258B-4A02-8F3A-4FE8539188E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A065E9F-258B-4A02-8F3A-4FE8539188E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30C331D-E988-453F-9654-EC317C8CAE13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30C331D-E988-453F-9654-EC317C8CAE13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30C331D-E988-453F-9654-EC317C8CAE13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30C331D-E988-453F-9654-EC317C8CAE13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
