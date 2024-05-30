@@ -49,8 +49,7 @@
             Cart cart = new Cart();
 
             //2.2 User menu
-            bool exit = false;
-            while (!exit)
+            while (true)
             {
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
@@ -61,14 +60,14 @@
                 Console.WriteLine("3. Remove product from cart");
                 Console.WriteLine("4. View products in cart");
                 Console.WriteLine("5. View total price in cart");
-                Console.WriteLine("6. Exit");
+                Console.WriteLine("0. Exit");
                 Console.Write("Select an option: ");
                 int option = int.Parse(Console.ReadLine());
 
                 switch (option)
                 {
                     case 1:
-                        ViewProducts(store);
+                        ViewProducts();
                         break;
                     case 2:
                         AddProductToCart(store, cart);
@@ -82,9 +81,9 @@
                     case 5:
                         ViewTotalPrice(cart);
                         break;
-                    case 6:
-                        exit = true;
+                    case 0:
                         Exit();
+                        Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Invalid option. Try again.");
@@ -94,8 +93,7 @@
 
 
             // 2.3 View products in the Shop
-            //        List<Product> products = shop.GetAllProducts();
-            void ViewProducts(Shop shop)
+            void ViewProducts()
             {
                 Console.WriteLine("Products available in the shop:");
                 foreach (var product in store.GetAllProducts())
