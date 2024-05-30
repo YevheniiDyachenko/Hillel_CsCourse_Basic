@@ -1,46 +1,158 @@
 ﻿namespace _15._1_Product_store
-{ 
+{
     public class Program
     {
         public static void Main()
         {
             Console.InputEncoding = System.Text.Encoding.Unicode;
             Console.OutputEncoding = System.Text.Encoding.Unicode;
-            
-            // Creating a store
+
+            // 1. Store
+            // 1.1 Creating a store
             Shop store = new Shop();
-            
-            // Додавання нових продуктів у магазин
-            store.AddProduct(new Product(1, "Йогурт", 3.00));
-            store.AddProduct(new Product(2, "Банани", 2.10)); // Оновлення існуючого продукту
-            store.AddProduct(new Product(3, "Сир", 4.50));
-            store.AddProduct(new Product(4, "Молоко", 1.80));
 
+            // 1.2 Adding products to the store
+            Console.WriteLine("Our shop is loading...");
+            InitializeShop(store);
 
-            // Отримання всіх продуктів у магазині
-            Console.WriteLine("Products in shop:");
-            foreach (var product in store.GetAllProducts())
+            static void InitializeShop(Shop shop)
             {
-                Console.WriteLine($"{product.Name} - ${product.Price}");
+                shop.AddProduct(new Product(1, "Apple", 1.20));
+                shop.AddProduct(new Product(2, "Banana", 0.80));
+                shop.AddProduct(new Product(3, "Orange", 1.50));
+                shop.AddProduct(new Product(4, "Grapes", 2.50));
+                shop.AddProduct(new Product(5, "Pineapple", 3.00));
+                shop.AddProduct(new Product(6, "Watermelon", 4.00));
+
+                Console.WriteLine("Products added to the shop:");
+                foreach (var product in shop.GetAllProducts())
+                {
+                    Console.WriteLine(product);
+                }
             }
 
-            // Створення кошика
+            // 1.3 Finding a product by ID in the store
+            Product productById = store.GetProductById(2);
+            Console.WriteLine("Product found by ID:");
+            Console.WriteLine(productById);
+
+            // 1.4 Remove a product by ID from the store
+            store.RemoveProduct(productById.Id);
+            Console.WriteLine("Product removed from shop.");
+
+            Console.WriteLine("Shop is loaded!");
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Welcome to the product shop!");
+
+            // 2. Cart
+            // 2.1 Creating a cart
             Cart cart = new Cart();
 
-            // Додавання продуктів до кошика
-            cart.AddToCart(new Product(5, "Apple", 0.5));
-            cart.AddToCart(new Product(6, "Milk", 2.5));
-            cart.AddToCart(new Product(7, "Bread", 1.5));
-
-            // Отримання всіх продуктів у кошику
-            Console.WriteLine("\nProducts in cart:");
-            foreach (var product in cart.GetProductsCart())
+            //2.2 User menu
+            bool exit = false;
+            while (!exit)
             {
-                Console.WriteLine($"{product.Name} - ${product.Price}");
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
+                Console.Clear();
+                Console.WriteLine("Menu:");
+                Console.WriteLine("1. View products in the shop");
+                Console.WriteLine("2. Add product to cart");
+                Console.WriteLine("3. Remove product from cart");
+                Console.WriteLine("4. View products in cart");
+                Console.WriteLine("5. View total price in cart");
+                Console.WriteLine("6. Exit");
+                Console.Write("Select an option: ");
+                int option = int.Parse(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1:
+                        ViewProducts(store);
+                        break;
+                    case 2:
+                        AddProductToCart(store, cart);
+                        break;
+                    case 3:
+                        RemoveProductFromCart(cart);
+                        break;
+                    case 4:
+                        ViewCart(cart);
+                        break;
+                    case 5:
+                        ViewTotalPrice(cart);
+                        break;
+                    case 6:
+                        exit = true;
+                        Exit();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid option. Try again.");
+                        break;
+                }
             }
 
-            // Обчислення загальної ціни продуктів у кошику
-            cart.CalculateTotalPrice();
+
+            // 2.3 View products in the Shop
+            //        List<Product> products = shop.GetAllProducts();
+            void ViewProducts(Shop shop)
+            {
+                Console.WriteLine("Products available in the shop:");
+                foreach (var product in store.GetAllProducts())
+                {
+                    Console.WriteLine(product);
+                }
+            }
+
+            // 2.4 Add product to cart
+            static void AddProductToCart(Shop shop, Cart cart)
+            {
+                Console.Write("Enter product ID to add to cart: ");
+                int productId = int.Parse(Console.ReadLine());
+                Product product = shop.GetProductById(productId);
+                if (product != null)
+                {
+                    cart.AddToCart(product);
+                    Console.WriteLine("Product added to cart.");
+                }
+                else
+                {
+                    Console.WriteLine("Product not found.");
+                }
+            }
+
+            // 2.5 Remove product from cart
+            static void RemoveProductFromCart(Cart cart)
+            {
+                Console.Write("Enter product ID to remove from cart: ");
+                int productId = int.Parse(Console.ReadLine());
+                cart.RemoveFromCart(productId);
+                Console.WriteLine("Product removed from cart.");
+            }
+
+
+            // 2.6 View products in cart
+            static void ViewCart(Cart cart)
+            {
+                Console.WriteLine("\nProducts in cart:");
+                foreach (var product in cart.GetProductsCart())
+                {
+                    Console.WriteLine(product);
+                }
+            }
+
+            // 2.7 View total price in cart
+            static void ViewTotalPrice(Cart cart)
+            {
+                double totalPrice = cart.CalculateTotalPrice();
+                Console.WriteLine($"Total price of products in cart: {totalPrice:C}");
+            }
+
+            // 2.8 Exit
+            static void Exit()
+            {
+                Console.WriteLine("Exiting...");
+            }
         }
     }
 }

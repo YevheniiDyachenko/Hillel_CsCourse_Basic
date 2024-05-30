@@ -19,7 +19,7 @@
             productsCart.RemoveAll(product => product.Id == productId);
         }
 
-        public void CalculateTotalPrice()
+        public double CalculateTotalPrice()
         {
             double totalPrice = 0;
             foreach (Product product in productsCart)
@@ -27,17 +27,7 @@
                 totalPrice += product.Price;
             }
 
-            Console.WriteLine($"Total price: {totalPrice}");
-        }
-
-        public void GetProducts()
-        {
-            foreach (Product product in productsCart)
-            {
-                Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
-            }
-
-            Console.WriteLine();
+            return totalPrice;
         }
 
         public List<Product> GetProductsCart()

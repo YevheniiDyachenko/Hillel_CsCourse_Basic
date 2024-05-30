@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.2 Event logging", "Lesso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.1 Product store", "Lesson 15\15.1 Product store\15.1 Product store.csproj", "{6CCD9047-0EBC-43DB-8EBB-EADB78DA4070}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.2 CatalogOfContacts", "Lesson 15\15.2 CatalogOfContacts\15.2 CatalogOfContacts.csproj", "{349D9950-5665-4DF9-B853-67EAFC5A672C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -227,6 +229,10 @@ Global
 		{6CCD9047-0EBC-43DB-8EBB-EADB78DA4070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CCD9047-0EBC-43DB-8EBB-EADB78DA4070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CCD9047-0EBC-43DB-8EBB-EADB78DA4070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
