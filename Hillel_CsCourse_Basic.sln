@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.1 Product store", "Lesso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.2 CatalogOfContacts", "Lesson 15\15.2 CatalogOfContacts\15.2 CatalogOfContacts.csproj", "{349D9950-5665-4DF9-B853-67EAFC5A672C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.1 LINQ", "Lesson 16\16.1 LINQ\16.1 LINQ.csproj", "{F92D66D6-BA3E-42F9-BFFA-09D5345DAB2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,10 @@ Global
 		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{349D9950-5665-4DF9-B853-67EAFC5A672C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92D66D6-BA3E-42F9-BFFA-09D5345DAB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92D66D6-BA3E-42F9-BFFA-09D5345DAB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92D66D6-BA3E-42F9-BFFA-09D5345DAB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92D66D6-BA3E-42F9-BFFA-09D5345DAB2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
