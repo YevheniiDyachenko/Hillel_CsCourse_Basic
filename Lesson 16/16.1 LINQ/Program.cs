@@ -50,6 +50,7 @@
 
     }
 
+    // Product class
     class Product
     {
         public string Name { get; set; }
@@ -61,6 +62,7 @@
         }
     }
     
+    // Print results method
     static void PrintResults<T>(string operationName, IEnumerable<T> originalItems, IEnumerable<T> resultItems)
     {
         Console.WriteLine($"\n{operationName}");
