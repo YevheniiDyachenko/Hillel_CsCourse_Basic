@@ -65,10 +65,10 @@
     // Print results method
     static void PrintResults<T>(string operationName, IEnumerable<T> originalItems, IEnumerable<T> resultItems)
     {
-        Console.WriteLine($"\n{operationName}");
-        Console.WriteLine("Original items: " + string.Join(", ", originalItems));
-        Console.WriteLine("Result items: " + string.Join(", ", resultItems));
-        Console.WriteLine("----");
+       Console.WriteLine($"\n{operationName}");
+               Console.WriteLine("Original items: " + string.Join(", ", originalItems));
+               Console.WriteLine("Result items: " + string.Join(", ", resultItems));
+               Console.WriteLine("----"); 
     }
 }
     
